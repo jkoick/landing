@@ -1,5 +1,6 @@
 import "./css/style.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -58,6 +59,7 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
           {children}
           <SpeedInsights />
+          <Analytics />
         </div>
       </body>
     </html>
